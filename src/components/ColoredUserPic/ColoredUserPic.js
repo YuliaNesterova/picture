@@ -1,4 +1,4 @@
-import './ColoredUserPic.css';
+
 
 function ColoredUserPic(props) {
 
@@ -18,7 +18,7 @@ function ColoredUserPic(props) {
             display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 
             <img className="user-pic" src={props.src} alt="Avatar"  border={props.margin}
-                 style={{width: pictureSize, height: pictureSize, borderColor: props.backgroundColor}} onMouseEnter={onHover} onMouseLeave={onLeave}/>
+                 style={{borderRadius: '100%', width: pictureSize, height: pictureSize, borderColor: props.backgroundColor}} onMouseEnter={onHover} onMouseLeave={onLeave}/>
         </div>
 
     )
